@@ -16,6 +16,8 @@ knitr::opts_chunk$set(
 # IsletCalc
 
 <!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/IsletCalc)](https://CRAN.R-project.org/package=IsletCalc)
+[![CRAN downloads](https://cranlogs.r-pkg.org/badges/grand-total/IsletCalc)](https://cran.r-project.org/package=IsletCalc)
 [![R-CMD-check](https://github.com/sufyansuleman/IsletCalc/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sufyansuleman/IsletCalc/actions/workflows/R-CMD-check.yaml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)

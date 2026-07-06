@@ -5,6 +5,10 @@
 
 <!-- badges: start -->
 
+[![CRAN
+status](https://www.r-pkg.org/badges/version/IsletCalc)](https://CRAN.R-project.org/package=IsletCalc)
+[![CRAN
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/IsletCalc)](https://cran.r-project.org/package=IsletCalc)
 [![R-CMD-check](https://github.com/sufyansuleman/IsletCalc/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sufyansuleman/IsletCalc/actions/workflows/R-CMD-check.yaml)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -18,11 +22,9 @@ measurements. It covers both **beta-cell** (insulin) and **alpha-cell**
 (glucagon) function in one lightweight, dependency-free package.
 
 📖 **Full documentation, formulas and interpretation:**
-<https://sufyansuleman.github.io/IsletCalc/>
-([insulin
+<https://sufyansuleman.github.io/IsletCalc/> ([insulin
 release](https://sufyansuleman.github.io/IsletCalc/articles/insulin-release-indices.html)
-·
-[glucagon & the liver-alpha-cell
+· [glucagon & the liver-alpha-cell
 axis](https://sufyansuleman.github.io/IsletCalc/articles/glucagon-liver-alpha-cell-axis.html)).
 
 ## Installation
