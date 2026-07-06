@@ -33,7 +33,9 @@
 <li class="active nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
-<li><a class="dropdown-item" href="../articles/introduction.html">Introduction to IsletCalc</a></li>
+<li><a class="dropdown-item" href="../articles/glucagon-liver-alpha-cell-axis.html">Glucagon and the liver-alpha-cell axis</a></li>
+    <li><a class="dropdown-item" href="../articles/insulin-release-indices.html">Insulin release indices: formulas and interpretation</a></li>
+    <li><a class="dropdown-item" href="../articles/introduction.html">Introduction to IsletCalc</a></li>
   </ul>
 </li>
 <li class="nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
@@ -209,8 +211,8 @@ columns:</p>
 </tr>
 <tr class="odd">
 <td><code>sex</code></td>
-<td>Sex</td>
-<td>1 = male, 0/2 = female</td>
+<td>Male indicator</td>
+<td>1 = male, otherwise female</td>
 </tr>
 <tr class="even">
 <td><code>bmi</code></td>
@@ -230,6 +232,19 @@ columns:</p>
 <p>If a column required for a given index is missing, that index is
 skipped with a warning rather than the whole function failing, so you
 can still compute whichever indices your data supports.</p>
+</div>
+<div class="section level2">
+<h2 id="further-reading">Further reading<a class="anchor" aria-label="anchor" href="#further-reading"></a>
+</h2>
+<p>This vignette is a quick start. The package website hosts fuller
+articles with the exact formulas, unit conventions, biological
+interpretation and references:</p>
+<ul>
+<li><a href="https://sufyansuleman.github.io/IsletCalc/articles/insulin-release-indices.html">Insulin
+release indices: formulas and interpretation</a></li>
+<li><a href="https://sufyansuleman.github.io/IsletCalc/articles/glucagon-liver-alpha-cell-axis.html">Glucagon
+and the liver-alpha-cell axis</a></li>
+</ul>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>

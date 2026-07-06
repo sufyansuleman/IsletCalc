@@ -38,9 +38,10 @@ Indices calculated:
 
 ## References
 
-Faerch K, et al. (2021). Impaired Suppression of Glucagon in Obese
-Subjects Parallels Decline in Insulin Sensitivity and Beta-Cell
-Function. J Clin Endocrinol Metab.
+Chen X, Maldonado E, DeFronzo RA, Tripathy D (2021). Impaired
+Suppression of Glucagon in Obese Subjects Parallels Decline in Insulin
+Sensitivity and Beta-Cell Function. J Clin Endocrinol Metab, 106(5),
+1398-1409.
 [doi:10.1210/clinem/dgab019](https://doi.org/10.1210/clinem/dgab019)
 
 ## Examples
