@@ -33,7 +33,9 @@
 #' - `Xinsdg30` (`ogtt`): insulinogenic index using the 0-30 min glucose
 #'   increment.
 #' - `Xinsg30` (`ogtt`): insulinogenic index using the 30 min glucose value.
-#' - `Di` (`ogtt`): Disposition Index (`Xinsg30`-based).
+#' - `Di` (`ogtt`): Disposition Index, transcribed exactly as reported in
+#'   the Madsen (2024) index table:
+#'   `Xinsg30 * 1000 / (sqrt(G0_mgdl * I0_uU) * meanG_mgdl * meanI_uU)`.
 #' - `Bigtt_air` (`ogtt`): BIGTT Acute Insulin Response.
 #' - `Dibig` (`ogtt`): Disposition Index (`Bigtt_air`-based).
 #'
@@ -93,6 +95,9 @@ insulin_release <- function(data, category = c("fasting", "ogtt")) {
       data$Stumvoll <- 1283 + 1.829 * I30 - 138.7 * G30 + 3.772 * I0
       data$Xinsdg30 <- ((I30 - I0) * 0.1667) / ((G30 - G0) * 18)
       data$Xinsg30 <- ((I30 - I0) * 0.1667) / G30
+      # Di: transcribed exactly as reported in the Madsen 2024 table. The
+      # square root covers only (G0_mgdl * I0_uU); the mean terms sit
+      # outside the root, with numerator 1000.
       data$Di <- (data$Xinsg30 * 1000) /
         (sqrt((G0 * 18) * I0 * 0.1667) * ((mean_G * 18) * mean_I * 0.1667))
       data$Bigtt_air <- exp(8.20 + 0.00178 * I0 + 0.00168 * I30 -

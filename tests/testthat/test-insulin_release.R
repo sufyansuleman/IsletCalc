@@ -51,6 +51,17 @@ test_that("Cir uses the canonical mg/dL parenthesisation", {
   expect_equal(res$Cir, (300 * 0.1667 * 100) / (g30 * (g30 - 70)))
 })
 
+test_that("Di matches the as-reported Madsen table formula", {
+  df <- data.frame(G0 = 5, G30 = 8, G120 = 6, I0 = 60, I30 = 300,
+                   I120 = 150, sex = 1, bmi = 25)
+  res <- insulin_release(df, category = "ogtt")
+  xinsg30 <- ((300 - 60) * 0.1667) / 8
+  mg <- mean(c(5, 8, 6)); mi <- mean(c(60, 300, 150))
+  expected <- (xinsg30 * 1000) /
+    (sqrt((5 * 18) * 60 * 0.1667) * ((mg * 18) * mi * 0.1667))
+  expect_equal(res$Di, expected)
+})
+
 test_that("sex enters as a male indicator (female 0 and 2 are equivalent)", {
   base <- data.frame(G0 = 5, G30 = 8, G120 = 6, I0 = 60, I30 = 300,
                      I120 = 150, sex = 0, bmi = 25)

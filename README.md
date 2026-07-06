@@ -14,7 +14,7 @@ stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://
 
 IsletCalc computes surrogate indices of pancreatic **islet hormone
 release** from fasting and 75 g oral glucose tolerance test (OGTT)
-measurements — covering both **beta-cell** (insulin) and **alpha-cell**
+measurements. It covers both **beta-cell** (insulin) and **alpha-cell**
 (glucagon) function in one lightweight, dependency-free package.
 
 ## Installation
@@ -62,8 +62,8 @@ head(res[, c("Fasting_glucagon", "Glucagon_auc",
 ```
 
 A `Glucagon_suppression_ratio` at or above 1 indicates a failure to
-suppress glucagon after the glucose load — a hallmark of hepatic
-glucagon resistance.
+suppress glucagon after the glucose load, a hallmark of hepatic glucagon
+resistance.
 
 ## Input data
 

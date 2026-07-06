@@ -48,7 +48,9 @@ function.
 \item \code{Xinsdg30} (\code{ogtt}): insulinogenic index using the 0-30 min glucose
 increment.
 \item \code{Xinsg30} (\code{ogtt}): insulinogenic index using the 30 min glucose value.
-\item \code{Di} (\code{ogtt}): Disposition Index (\code{Xinsg30}-based).
+\item \code{Di} (\code{ogtt}): Disposition Index, transcribed exactly as reported in
+the Madsen (2024) index table:
+\code{Xinsg30 * 1000 / (sqrt(G0_mgdl * I0_uU) * meanG_mgdl * meanI_uU)}.
 \item \code{Bigtt_air} (\code{ogtt}): BIGTT Acute Insulin Response.
 \item \code{Dibig} (\code{ogtt}): Disposition Index (\code{Bigtt_air}-based).
 }
