@@ -33,9 +33,8 @@
 #'
 #' @export
 glucagon_resistance <- function(data) {
-  if (!is.data.frame(data)) {
-    stop("Input 'data' must be a data frame.")
-  }
+  .check_data(data)
+  .check_numeric(data, c("Glucagon0", "Glucagon120", "I0"))
 
   required_cols <- c("Glucagon0", "Glucagon120", "I0")
   missing_cols <- setdiff(required_cols, names(data))

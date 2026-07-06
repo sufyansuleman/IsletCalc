@@ -51,14 +51,15 @@
 #'
 #' @export
 insulin_release <- function(data, category = c("fasting", "ogtt")) {
-  if (!is.data.frame(data)) {
-    stop("Input 'data' must be a data frame.")
-  }
-
-  category <- tolower(category)
+  .check_data(data)
+  category <- .check_category(category, c("fasting", "ogtt"))
 
   required_fasting <- c("G0", "I0")
   required_ogtt <- c("G0", "I0", "G30", "I30", "G120", "I120", "sex", "bmi")
+  needed <- character(0)
+  if ("fasting" %in% category) needed <- union(needed, required_fasting)
+  if ("ogtt" %in% category) needed <- union(needed, required_ogtt)
+  .check_numeric(data, needed)
 
   if ("fasting" %in% category) {
     missing_cols <- setdiff(required_fasting, names(data))

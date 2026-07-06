@@ -65,3 +65,21 @@ test_that("non-data-frame input errors", {
   expect_error(insulin_release(list(G0 = 5, I0 = 60)),
                "must be a data frame")
 })
+
+test_that("unknown category errors with the allowed set", {
+  df <- data.frame(G0 = 5, I0 = 60)
+  expect_error(insulin_release(df, category = "meal"),
+               "Unknown `category`")
+})
+
+test_that("category is case-insensitive", {
+  df <- data.frame(G0 = 5, I0 = 60)
+  res <- insulin_release(df, category = "FASTING")
+  expect_true("Homa_beta" %in% names(res))
+})
+
+test_that("non-numeric required column errors", {
+  df <- data.frame(G0 = "high", I0 = 60)
+  expect_error(insulin_release(df, category = "fasting"),
+               "must be numeric")
+})

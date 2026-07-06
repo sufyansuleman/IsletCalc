@@ -26,9 +26,8 @@
 #'
 #' @export
 glucagon_release <- function(data) {
-  if (!is.data.frame(data)) {
-    stop("Input 'data' must be a data frame.")
-  }
+  .check_data(data)
+  .check_numeric(data, c("Glucagon0", "Glucagon30", "Glucagon120"))
 
   if (!"Glucagon0" %in% names(data)) {
     warning("Missing column for glucagon release indices: Glucagon0")
@@ -40,10 +39,11 @@ glucagon_release <- function(data) {
   auc_cols <- c("Glucagon0", "Glucagon30", "Glucagon120")
   missing_cols <- setdiff(auc_cols, names(data))
   if (length(missing_cols) > 0) {
-    warning("Missing columns for Glucagon_auc: ", paste(missing_cols, collapse = ", "))
+    warning("Missing columns for Glucagon_auc: ",
+            paste(missing_cols, collapse = ", "))
   } else {
     data$Glucagon_auc <- 0.5 * ((data$Glucagon30 + data$Glucagon0) * 30 +
-                                   (data$Glucagon120 + data$Glucagon30) * 90)
+                                  (data$Glucagon120 + data$Glucagon30) * 90)
   }
 
   data
