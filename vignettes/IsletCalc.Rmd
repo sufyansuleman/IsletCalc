@@ -1,8 +1,8 @@
 ---
-title: "Introduction to IsletCalc"
+title: "Get started with IsletCalc"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Introduction to IsletCalc}
+  %\VignetteIndexEntry{Get started with IsletCalc}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

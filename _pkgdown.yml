@@ -10,7 +10,7 @@ development:
 
 navbar:
   structure:
-    left: [reference, articles, news]
+    left: [intro, reference, articles, news]
     right: [search, github]
   components:
     news:
@@ -24,6 +24,12 @@ navbar:
 authors:
   Sufyan Suleman:
     href: https://orcid.org/0000-0001-6612-6915
+
+articles:
+  - title: "Methods and biology"
+    contents:
+      - articles/insulin-release-indices
+      - articles/glucagon-liver-alpha-cell-axis
 
 reference:
   - title: "Beta-cell (insulin release)"
