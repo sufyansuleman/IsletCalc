@@ -1,7 +1,9 @@
 Package: IsletCalc
 Title: Calculators for Insulin and Glucagon Release Indices
 Version: 0.0.1
-Authors@R: person("Sufyan", "Suleman", email = "sufyansuleman@hotmail.com", role = c("aut", "cre"))
+Authors@R: person("Sufyan", "Suleman", email = "sufyansuleman@hotmail.com",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0001-6612-6915"))
 Description: Facilitates the calculation of validated pancreatic islet
     hormone-release indices from fasting and oral glucose tolerance test
     (OGTT) measurements. Provides beta-cell insulin release indices
@@ -27,5 +29,6 @@ Suggests:
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Config/testthat/edition: 3
-URL: https://github.com/sufyansuleman/IsletCalc
+URL: https://github.com/sufyansuleman/IsletCalc,
+    https://sufyansuleman.github.io/IsletCalc/
 BugReports: https://github.com/sufyansuleman/IsletCalc/issues

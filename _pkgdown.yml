@@ -1,0 +1,40 @@
+url: https://sufyansuleman.github.io/IsletCalc/
+
+template:
+  bootstrap: 5
+  params:
+    search: true
+
+development:
+  mode: auto
+
+navbar:
+  structure:
+    left: [reference, articles, news]
+    right: [search, github]
+  components:
+    news:
+      text: Changelog
+      href: news/index.html
+    github:
+      icon: fa-github
+      aria-label: GitHub repository
+      href: https://github.com/sufyansuleman/IsletCalc
+
+authors:
+  Sufyan Suleman:
+    href: https://orcid.org/0000-0001-6612-6915
+
+reference:
+  - title: "Beta-cell (insulin release)"
+    desc: "Indices of insulin secretion from fasting and OGTT data."
+    contents:
+      - insulin_release
+  - title: "Alpha-cell (glucagon)"
+    desc: "Glucagon release magnitude and glucagon resistance indices."
+    contents:
+      - glucagon_release
+      - glucagon_resistance
+  - title: "Data"
+    contents:
+      - example_data

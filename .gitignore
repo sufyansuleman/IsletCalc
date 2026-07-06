@@ -5,3 +5,5 @@
 *.Rcheck/
 *.tar.gz
 .Rplots.pdf
+docs/
+
