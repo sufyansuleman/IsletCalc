@@ -1,0 +1,79 @@
+---
+title: "Introduction to IsletCalc"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to IsletCalc}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(IsletCalc)
+```
+
+## Overview
+
+IsletCalc computes surrogate indices of pancreatic islet hormone release from
+fasting and 75 g oral glucose tolerance test (OGTT) measurements, covering
+both beta-cell and alpha-cell function:
+
+- `insulin_release()`: beta-cell insulin release indices (HOMA-beta, CIR,
+  Stumvoll, BIGTT-AIR, disposition indices), following Madsen et al. (2024)
+  <doi:10.1038/s42255-024-01140-6>.
+- `glucagon_release()`: alpha-cell glucagon secretion magnitude (fasting
+  glucagon, glucagon AUC).
+- `glucagon_resistance()`: glucagon suppression / resistance indices,
+  reflecting impaired hepatic glucagon signalling as described in the
+  liver-alpha-cell-axis literature.
+
+## Insulin release
+
+```{r}
+data(example_data)
+res <- insulin_release(example_data, category = c("fasting", "ogtt"))
+head(res)
+```
+
+Request a single category if you only have fasting values:
+
+```{r}
+head(insulin_release(example_data, category = "fasting"))
+```
+
+## Glucagon release
+
+```{r}
+head(glucagon_release(example_data))
+```
+
+## Glucagon resistance
+
+```{r}
+head(glucagon_resistance(example_data))
+```
+
+A `Glucagon_suppression_ratio` at or above 1 indicates a failure to suppress
+glucagon after the glucose load, a hallmark of hepatic glucagon resistance.
+
+## Input data
+
+All three functions expect a data frame with a subset of these columns:
+
+| Column | Meaning | Unit |
+|---|---|---|
+| `G0`, `G30`, `G120` | Glucose at 0/30/120 min | mmol/L |
+| `I0`, `I30`, `I120` | Insulin at 0/30/120 min | pmol/L |
+| `sex` | Sex | 1 = male, 0/2 = female |
+| `bmi` | Body mass index | kg/m^2 |
+| `Glucagon0`, `Glucagon30`, `Glucagon120` | Glucagon at 0/30/120 min | pmol/L |
+
+If a column required for a given index is missing, that index is skipped with
+a warning rather than the whole function failing, so you can still compute
+whichever indices your data supports.

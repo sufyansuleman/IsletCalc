@@ -1,0 +1,14 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.github$
+^\.git$
+^\.Rcheck$
+^\.\.Rcheck$
+^LICENSE\.md$
+^IsletCalc_.*\.tar\.gz$
+^\.Rprofile$
+^\.Rhistory$
+^cran-comments\.md$
+^CRAN-SUBMISSION$
+^data-raw$
+^README\.Rmd$

@@ -1,0 +1,19 @@
+#' Simulated OGTT Example Data
+#'
+#' A simulated dataset of 50 subjects with fasting and 75 g oral glucose
+#' tolerance test (OGTT) glucose, insulin and glucagon values, for use in
+#' the package examples, vignette and tests. Values are randomly generated
+#' and are not derived from real subjects.
+#'
+#' @format A data frame with 50 rows and 11 variables:
+#' \describe{
+#'   \item{G0, G30, G120}{Glucose (mmol/L) at 0, 30 and 120 min.}
+#'   \item{I0, I30, I120}{Insulin (pmol/L) at 0, 30 and 120 min.}
+#'   \item{sex}{Sex, coded 1 = male, 0 = female.}
+#'   \item{bmi}{Body mass index (kg/m^2).}
+#'   \item{Glucagon0, Glucagon30, Glucagon120}{Glucagon (pmol/L) at 0, 30
+#'     and 120 min.}
+#' }
+#'
+#' @source Simulated; see `data-raw/example_data.R`.
+"example_data"

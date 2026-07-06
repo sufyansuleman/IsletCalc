@@ -1,0 +1,10 @@
+citHeader("To cite package IsletCalc in publications:")
+
+bibentry(
+  bibtype = "Article",
+  title = "IsletCalc: Insulin and Glucagon Release Indices Calculator",
+  author = person("Sufyan", "Suleman", email = "sufyansuleman@hotmail.com"),
+  year = "2026",
+  journal = "R package documentation",
+  note = "Beta-cell insulin release formulas follow Madsen AL, et al. (2024) Nature Metabolism, doi:10.1038/s42255-024-01140-6. Please cite this package and the underlying study when using IsletCalc in your research."
+)
