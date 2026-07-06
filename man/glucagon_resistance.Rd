@@ -16,7 +16,7 @@ The input data frame with the requested index columns appended.
 \description{
 Calculates surrogate indices of glucagon resistance / failure of
 glucose-induced glucagon suppression, reflecting impaired hepatic
-glucagon signalling as described in the liver-alpha-cell-axis literature.
+glucagon signaling as described in the liver-alpha-cell-axis literature.
 }
 \details{
 Expected units: glucagon and insulin in a consistent molar unit

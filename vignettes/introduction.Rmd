@@ -30,7 +30,7 @@ both beta-cell and alpha-cell function:
 - `glucagon_release()`: alpha-cell glucagon secretion magnitude (fasting
   glucagon, glucagon AUC).
 - `glucagon_resistance()`: glucagon suppression / resistance indices,
-  reflecting impaired hepatic glucagon signalling as described in the
+  reflecting impaired hepatic glucagon signaling as described in the
   liver-alpha-cell-axis literature.
 
 ## Insulin release

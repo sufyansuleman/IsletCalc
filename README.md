@@ -33,7 +33,7 @@ remotes::install_github("sufyansuleman/IsletCalc")
   fasting glucagon and glucagon AUC.
 - `glucagon_resistance(data)` — glucagon suppression / resistance indices:
   glucagon suppression ratio and fasting glucagon:insulin ratio, reflecting
-  impaired hepatic glucagon signalling (the "liver-alpha-cell axis").
+  impaired hepatic glucagon signaling (the "liver-alpha-cell axis").
 
 ## Quick start
 

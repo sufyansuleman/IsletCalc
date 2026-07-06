@@ -2,7 +2,7 @@
 #'
 #' Calculates surrogate indices of glucagon resistance / failure of
 #' glucose-induced glucagon suppression, reflecting impaired hepatic
-#' glucagon signalling as described in the liver-alpha-cell-axis literature.
+#' glucagon signaling as described in the liver-alpha-cell-axis literature.
 #'
 #' @param data A data frame containing `"Glucagon0"`, `"Glucagon120"` and
 #'   `"I0"`.
