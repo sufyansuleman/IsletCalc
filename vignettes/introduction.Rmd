@@ -70,10 +70,19 @@ All three functions expect a data frame with a subset of these columns:
 |---|---|---|
 | `G0`, `G30`, `G120` | Glucose at 0/30/120 min | mmol/L |
 | `I0`, `I30`, `I120` | Insulin at 0/30/120 min | pmol/L |
-| `sex` | Sex | 1 = male, 0/2 = female |
+| `sex` | Male indicator | 1 = male, otherwise female |
 | `bmi` | Body mass index | kg/m^2 |
 | `Glucagon0`, `Glucagon30`, `Glucagon120` | Glucagon at 0/30/120 min | pmol/L |
 
 If a column required for a given index is missing, that index is skipped with
 a warning rather than the whole function failing, so you can still compute
 whichever indices your data supports.
+
+## Further reading
+
+This vignette is a quick start. The package website hosts fuller articles
+with the exact formulas, unit conventions, biological interpretation and
+references:
+
+- [Insulin release indices: formulas and interpretation](https://sufyansuleman.github.io/IsletCalc/articles/insulin-release-indices.html)
+- [Glucagon and the liver-alpha-cell axis](https://sufyansuleman.github.io/IsletCalc/articles/glucagon-liver-alpha-cell-axis.html)

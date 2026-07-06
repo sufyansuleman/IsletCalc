@@ -23,9 +23,10 @@
 #' @return The input data frame with the requested index columns appended.
 #'
 #' @references
-#' Faerch K, et al. (2021). Impaired Suppression of Glucagon in Obese
-#' Subjects Parallels Decline in Insulin Sensitivity and Beta-Cell Function.
-#' J Clin Endocrinol Metab. \doi{10.1210/clinem/dgab019}
+#' Chen X, Maldonado E, DeFronzo RA, Tripathy D (2021). Impaired
+#' Suppression of Glucagon in Obese Subjects Parallels Decline in Insulin
+#' Sensitivity and Beta-Cell Function. J Clin Endocrinol Metab, 106(5),
+#' 1398-1409. \doi{10.1210/clinem/dgab019}
 #'
 #' @examples
 #' data(example_data)
