@@ -14,10 +14,13 @@
 #' - `ogtt`: `"G0"`, `"I0"`, `"G30"`, `"I30"`, `"G120"`, `"I120"`, `"sex"`, `"bmi"`
 #'
 #' Expected units: glucose (`G0`, `G30`, `G120`) in mmol/L, insulin (`I0`,
-#' `I30`, `I120`) in pmol/L, `bmi` in kg/m^2, and `sex` coded 1 = male,
-#' 0 or 2 = female. Internally, insulin is converted from pmol/L to
-#' microU/mL (`value * 0.1667`) and glucose from mmol/L to mg/dL
-#' (`value * 18`) where the source formula was derived in those units.
+#' `I30`, `I120`) in pmol/L, `bmi` in kg/m^2, and `sex` as a male indicator
+#' (male = 1, female = 0). The BIGTT-AIR and BIGTT-SI terms enter `sex`
+#' as a linear multiplier, so any value other than 1 is treated as female;
+#' females coded as 2 are handled correctly. Internally, insulin is
+#' converted from pmol/L to microU/mL (`value * 0.1667`) and glucose from
+#' mmol/L to mg/dL (`value * 18`) where the source formula was derived in
+#' those units.
 #' If a required column is missing, the corresponding indices are skipped
 #' with a warning; missing values within a present column yield `NA` only
 #' for the indices that depend on them.
@@ -76,7 +79,10 @@ insulin_release <- function(data, category = c("fasting", "ogtt")) {
     } else {
       G0 <- data$G0; G30 <- data$G30; G120 <- data$G120
       I0 <- data$I0; I30 <- data$I30; I120 <- data$I120
-      sex <- data$sex; bmi <- data$bmi
+      bmi <- data$bmi
+      # BIGTT was derived with sex as a male indicator (male = 1, female = 0),
+      # so coerce to 0/1 to stay correct even if females are coded 2.
+      sex <- as.integer(data$sex == 1)
 
       G30_mgdl <- G30 * 18
       mean_G <- rowMeans(cbind(G0, G30, G120), na.rm = TRUE)

@@ -1,5 +1,5 @@
 test_that("Fasting_glucagon is a pass-through of Glucagon0", {
-  df <- data.frame(Glucagon0 = 10)
+  df <- data.frame(Glucagon0 = 10, Glucagon30 = 8, Glucagon120 = 9)
   res <- glucagon_release(df)
   expect_equal(res$Fasting_glucagon, 10)
 })

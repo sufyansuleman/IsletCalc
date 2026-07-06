@@ -28,10 +28,13 @@ Required columns per category:
 }
 
 Expected units: glucose (\code{G0}, \code{G30}, \code{G120}) in mmol/L, insulin (\code{I0},
-\code{I30}, \code{I120}) in pmol/L, \code{bmi} in kg/m^2, and \code{sex} coded 1 = male,
-0 or 2 = female. Internally, insulin is converted from pmol/L to
-microU/mL (\code{value * 0.1667}) and glucose from mmol/L to mg/dL
-(\code{value * 18}) where the source formula was derived in those units.
+\code{I30}, \code{I120}) in pmol/L, \code{bmi} in kg/m^2, and \code{sex} as a male indicator
+(male = 1, female = 0). The BIGTT-AIR and BIGTT-SI terms enter \code{sex}
+as a linear multiplier, so any value other than 1 is treated as female;
+females coded as 2 are handled correctly. Internally, insulin is
+converted from pmol/L to microU/mL (\code{value * 0.1667}) and glucose from
+mmol/L to mg/dL (\code{value * 18}) where the source formula was derived in
+those units.
 If a required column is missing, the corresponding indices are skipped
 with a warning; missing values within a present column yield \code{NA} only
 for the indices that depend on them.
