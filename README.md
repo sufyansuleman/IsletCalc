@@ -31,7 +31,12 @@ axis](https://sufyansuleman.github.io/IsletCalc/articles/glucagon-liver-alpha-ce
 ## Installation
 
 ``` r
-# development version:
+install.packages("IsletCalc")
+```
+
+The development version can be installed from GitHub:
+
+``` r
 # install.packages("remotes")
 remotes::install_github("sufyansuleman/IsletCalc")
 ```
@@ -91,6 +96,10 @@ missing column skips that index with a warning rather than failing the
 whole call.
 
 ## Citation
+
+If you use IsletCalc in your research, please cite it. The archived
+release has a DOI:
+[10.5281/zenodo.21420133](https://doi.org/10.5281/zenodo.21420133).
 
 ``` r
 citation("IsletCalc")
