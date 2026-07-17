@@ -2,6 +2,8 @@
 
 ## IsletCalc 0.0.1
 
+CRAN release: 2026-07-16
+
 - Initial release.
 - [`insulin_release()`](https://sufyansuleman.github.io/IsletCalc/reference/insulin_release.md):
   beta-cell insulin release indices (HOMA-beta, CIR, Stumvoll, Xinsdg30,
