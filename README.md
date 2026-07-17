@@ -20,7 +20,10 @@ stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://
 IsletCalc computes surrogate indices of pancreatic **islet hormone
 release** from fasting and 75 g oral glucose tolerance test (OGTT)
 measurements. It covers both **beta-cell** (insulin) and **alpha-cell**
-(glucagon) function in one lightweight, dependency-free package.
+(glucagon) function in one lightweight, dependency-free package for
+metabolic and endocrine research. Every index follows a published,
+peer-reviewed formula, with the exact equation, unit conventions and
+source documented (see [References](#references)).
 
 **Full documentation, formulas and interpretation:**
 <https://sufyansuleman.github.io/IsletCalc/> ([insulin
@@ -104,6 +107,37 @@ release has a DOI:
 ``` r
 citation("IsletCalc")
 ```
+
+## References
+
+Index formulas follow these primary sources (full per-index formulas and
+units are in the
+[articles](https://sufyansuleman.github.io/IsletCalc/)):
+
+- Madsen AL, et al. (2024). Genetic architecture of oral
+  glucose-stimulated insulin release provides biological insights into
+  type 2 diabetes aetiology. *Nature Metabolism*.
+  [doi:10.1038/s42255-024-01140-6](https://doi.org/10.1038/s42255-024-01140-6)
+  (index panel; `Di`, `Dibig`).
+- Matthews DR, et al. (1985). Homeostasis model assessment.
+  *Diabetologia*.
+  [doi:10.1007/BF00280883](https://doi.org/10.1007/BF00280883)
+  (`Homa_beta`).
+- Sluiter WJ, et al. (1976). Glucose tolerance and insulin release, a
+  mathematical approach. *Diabetes*.
+  [doi:10.2337/diab.25.4.241](https://doi.org/10.2337/diab.25.4.241)
+  (`Cir`).
+- Stumvoll M, et al. (2000). Use of the OGTT to assess insulin release
+  and insulin sensitivity. *Diabetes Care*.
+  [doi:10.2337/diacare.23.3.295](https://doi.org/10.2337/diacare.23.3.295)
+  (`Stumvoll`).
+- Hansen T, et al. (2007). The BIGTT test. *Diabetes Care*.
+  [doi:10.2337/dc06-1240](https://doi.org/10.2337/dc06-1240)
+  (`Bigtt_air`, `Dibig`).
+- Chen X, et al. (2021). Impaired suppression of glucagon in obese
+  subjects. *J Clin Endocrinol Metab*.
+  [doi:10.1210/clinem/dgab019](https://doi.org/10.1210/clinem/dgab019)
+  (glucagon resistance).
 
 ## Related package
 
