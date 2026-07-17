@@ -8,7 +8,7 @@
 ## Citation
 
 Source:
-[`inst/CITATION`](https://github.com/sufyansuleman/IsletCalc/blob/main/inst/CITATION)
+[`inst/CITATION`](https://github.com/sufyansuleman/IsletCalc/blob/v0.0.1/inst/CITATION)
 
 Suleman S (2026). “IsletCalc: Insulin and Glucagon Release Indices
 Calculator.” *R package documentation*. Beta-cell insulin release
