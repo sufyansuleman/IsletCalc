@@ -22,7 +22,7 @@ release** from fasting and 75 g oral glucose tolerance test (OGTT)
 measurements. It covers both **beta-cell** (insulin) and **alpha-cell**
 (glucagon) function in one lightweight, dependency-free package.
 
-📖 **Full documentation, formulas and interpretation:**
+**Full documentation, formulas and interpretation:**
 <https://sufyansuleman.github.io/IsletCalc/> ([insulin
 release](https://sufyansuleman.github.io/IsletCalc/articles/insulin-release-indices.html)
 · [glucagon & the liver-alpha-cell
