@@ -10,16 +10,15 @@
 Source:
 [`inst/CITATION`](https://github.com/sufyansuleman/IsletCalc/blob/main/inst/CITATION)
 
-Suleman S (2026). “IsletCalc: Insulin and Glucagon Release Indices
-Calculator.” *R package documentation*. Beta-cell insulin release
-formulas follow Madsen AL, et al. (2024) Nature Metabolism,
-doi:10.1038/s42255-024-01140-6. Please cite this package and the
-underlying study when using IsletCalc in your research.
+Suleman, S. (2026). IsletCalc: Calculators for Insulin and Glucagon
+Release Indices. R package version 0.0.1. doi:10.5281/zenodo.21420133.
+https://CRAN.R-project.org/package=IsletCalc
 
-    @Article{,
-      title = {IsletCalc: Insulin and Glucagon Release Indices Calculator},
+    @Manual{,
+      title = {IsletCalc: Calculators for Insulin and Glucagon Release Indices},
       author = {Sufyan Suleman},
       year = {2026},
-      journal = {R package documentation},
-      note = {Beta-cell insulin release formulas follow Madsen AL, et al. (2024) Nature Metabolism, doi:10.1038/s42255-024-01140-6. Please cite this package and the underlying study when using IsletCalc in your research.},
+      note = {R package version 0.0.1},
+      doi = {10.5281/zenodo.21420133},
+      url = {https://CRAN.R-project.org/package=IsletCalc},
     }

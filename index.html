@@ -53,7 +53,7 @@
 </h1></div>
 <!-- badges: start -->
 
-<p>IsletCalc computes surrogate indices of pancreatic <strong>islet hormone release</strong> from fasting and 75 g oral glucose tolerance test (OGTT) measurements. It covers both <strong>beta-cell</strong> (insulin) and <strong>alpha-cell</strong> (glucagon) function in one lightweight, dependency-free package.</p>
+<p>IsletCalc computes surrogate indices of pancreatic <strong>islet hormone release</strong> from fasting and 75 g oral glucose tolerance test (OGTT) measurements. It covers both <strong>beta-cell</strong> (insulin) and <strong>alpha-cell</strong> (glucagon) function in one lightweight, dependency-free package for metabolic and endocrine research. Every index follows a published, peer-reviewed formula, with the exact equation, unit conventions and source documented (see <a href="#references">References</a>).</p>
 <p><strong>Full documentation, formulas and interpretation:</strong> <a href="https://sufyansuleman.github.io/IsletCalc/" class="uri">https://sufyansuleman.github.io/IsletCalc/</a> (<a href="https://sufyansuleman.github.io/IsletCalc/articles/insulin-release-indices.html">insulin release</a> · <a href="https://sufyansuleman.github.io/IsletCalc/articles/glucagon-liver-alpha-cell-axis.html">glucagon &amp; the liver-alpha-cell axis</a>).</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
@@ -181,6 +181,19 @@
 <p>If you use IsletCalc in your research, please cite it. The archived release has a DOI: <a href="https://doi.org/10.5281/zenodo.21420133" class="external-link">10.5281/zenodo.21420133</a>.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"IsletCalc"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
+</h2>
+<p>Index formulas follow these primary sources (full per-index formulas and units are in the <a href="https://sufyansuleman.github.io/IsletCalc/">articles</a>):</p>
+<ul>
+<li>Madsen AL, et al. (2024). Genetic architecture of oral glucose-stimulated insulin release provides biological insights into type 2 diabetes aetiology. <em>Nature Metabolism</em>. <a href="https://doi.org/10.1038/s42255-024-01140-6" class="external-link">doi:10.1038/s42255-024-01140-6</a> (index panel; <code>Di</code>, <code>Dibig</code>).</li>
+<li>Matthews DR, et al. (1985). Homeostasis model assessment. <em>Diabetologia</em>. <a href="https://doi.org/10.1007/BF00280883" class="external-link">doi:10.1007/BF00280883</a> (<code>Homa_beta</code>).</li>
+<li>Sluiter WJ, et al. (1976). Glucose tolerance and insulin release, a mathematical approach. <em>Diabetes</em>. <a href="https://doi.org/10.2337/diab.25.4.241" class="external-link">doi:10.2337/diab.25.4.241</a> (<code>Cir</code>).</li>
+<li>Stumvoll M, et al. (2000). Use of the OGTT to assess insulin release and insulin sensitivity. <em>Diabetes Care</em>. <a href="https://doi.org/10.2337/diacare.23.3.295" class="external-link">doi:10.2337/diacare.23.3.295</a> (<code>Stumvoll</code>).</li>
+<li>Hansen T, et al. (2007). The BIGTT test. <em>Diabetes Care</em>. <a href="https://doi.org/10.2337/dc06-1240" class="external-link">doi:10.2337/dc06-1240</a> (<code>Bigtt_air</code>, <code>Dibig</code>).</li>
+<li>Chen X, et al. (2021). Impaired suppression of glucagon in obese subjects. <em>J Clin Endocrinol Metab</em>. <a href="https://doi.org/10.1210/clinem/dgab019" class="external-link">doi:10.1210/clinem/dgab019</a> (glucagon resistance).</li>
+</ul>
 </div>
 <div class="section level2">
 <h2 id="related-package">Related package<a class="anchor" aria-label="anchor" href="#related-package"></a>
