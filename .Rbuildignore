@@ -11,6 +11,8 @@
 ^\.Rhistory$
 ^cran-comments\.md$
 ^CRAN-SUBMISSION$
+^CITATION\.cff$
+^\.zenodo\.json$
 ^data-raw$
 ^README\.Rmd$
 ^_pkgdown\.yml$

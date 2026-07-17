@@ -1,0 +1,35 @@
+{
+  "title": "IsletCalc: Calculators for Insulin and Glucagon Release Indices",
+  "description": "Facilitates the calculation of validated pancreatic islet hormone-release indices from fasting and oral glucose tolerance test (OGTT) measurements. Provides beta-cell insulin release indices (including HOMA-beta, corrected insulin response, Stumvoll first-phase index, BIGTT-AIR, and disposition indices), alongside alpha-cell glucagon release and glucagon resistance indices.",
+  "creators": [
+    {
+      "name": "Suleman, Sufyan",
+      "orcid": "0000-0001-6612-6915"
+    }
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "keywords": [
+    "R package",
+    "insulin",
+    "glucagon",
+    "OGTT",
+    "beta-cell function",
+    "alpha-cell function",
+    "HOMA-beta",
+    "metabolic research"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/sufyansuleman/IsletCalc",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://CRAN.R-project.org/package=IsletCalc",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    }
+  ]
+}
