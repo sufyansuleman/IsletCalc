@@ -7,6 +7,14 @@ date-released: "2026-07-17"
 license: MIT
 repository-code: "https://github.com/sufyansuleman/IsletCalc"
 url: "https://sufyansuleman.github.io/IsletCalc/"
+doi: "10.5281/zenodo.21420133"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21420133"
+    description: "Concept DOI — always resolves to the latest version"
+  - type: doi
+    value: "10.5281/zenodo.21420134"
+    description: "Version-specific DOI for v0.0.1"
 authors:
   - family-names: Suleman
     given-names: Sufyan

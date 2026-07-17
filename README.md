@@ -9,6 +9,7 @@
 status](https://www.r-pkg.org/badges/version/IsletCalc)](https://CRAN.R-project.org/package=IsletCalc)
 [![CRAN
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/IsletCalc)](https://cran.r-project.org/package=IsletCalc)
+[![DOI](https://zenodo.org/badge/1291327717.svg)](https://doi.org/10.5281/zenodo.21420133)
 [![R-CMD-check](https://github.com/sufyansuleman/IsletCalc/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sufyansuleman/IsletCalc/actions/workflows/R-CMD-check.yaml)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
